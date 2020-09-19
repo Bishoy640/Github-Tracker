@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  
+}
+
+.backspacepersons{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  background-color: rgb(186, 147, 224);
+  opacity:80% ;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  top: 30%;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1000px;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
 .App-logo {
