@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Github-Tracker/static/css/main.57af66d7.chunk.css",
-    "main.js": "/Github-Tracker/static/js/main.15c56b99.chunk.js",
-    "main.js.map": "/Github-Tracker/static/js/main.15c56b99.chunk.js.map",
+    "main.js": "/Github-Tracker/static/js/main.473984fe.chunk.js",
+    "main.js.map": "/Github-Tracker/static/js/main.473984fe.chunk.js.map",
     "runtime-main.js": "/Github-Tracker/static/js/runtime-main.192bd857.js",
     "runtime-main.js.map": "/Github-Tracker/static/js/runtime-main.192bd857.js.map",
     "static/js/2.d9c1d05d.chunk.js": "/Github-Tracker/static/js/2.d9c1d05d.chunk.js",
     "static/js/2.d9c1d05d.chunk.js.map": "/Github-Tracker/static/js/2.d9c1d05d.chunk.js.map",
     "index.html": "/Github-Tracker/index.html",
-    "precache-manifest.8096606e34b155934067d15ab175a713.js": "/Github-Tracker/precache-manifest.8096606e34b155934067d15ab175a713.js",
+    "precache-manifest.cab8991e72e8d99bcc0e03ebe8353447.js": "/Github-Tracker/precache-manifest.cab8991e72e8d99bcc0e03ebe8353447.js",
     "service-worker.js": "/Github-Tracker/service-worker.js",
     "static/css/main.57af66d7.chunk.css.map": "/Github-Tracker/static/css/main.57af66d7.chunk.css.map",
     "static/js/2.d9c1d05d.chunk.js.LICENSE.txt": "/Github-Tracker/static/js/2.d9c1d05d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.192bd857.js",
     "static/js/2.d9c1d05d.chunk.js",
     "static/css/main.57af66d7.chunk.css",
-    "static/js/main.15c56b99.chunk.js"
+    "static/js/main.473984fe.chunk.js"
   ]
 }
