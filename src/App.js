@@ -88,7 +88,7 @@ class App extends Component {
     //   this.setState({ personsJSX: null })
     // }
 
-    e.persist()
+    e.persist();
 
   }
 
