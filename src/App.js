@@ -15,7 +15,7 @@ class App extends Component {
     outputPersons: 's',
     loading: false,
     personsJSX: null,
-    value: "s",
+    value: "2",
     url: null,
     doIt: false,
   };
@@ -95,7 +95,7 @@ class App extends Component {
 
   render() {
 
-    if (this.state.value === 's') {
+    if (this.state.value === '3') {
       return <div>
         Enter a value
         <Wallpaper />
