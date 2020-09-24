@@ -18,7 +18,7 @@ body{
 
 .outerDarkPart{
     border-radius: 5px;
-    background-color: rgb(140, 38, 165);
+    background-color: rgb(163, 78, 184);
     opacity: 100%;
 }
 
@@ -149,7 +149,7 @@ img{
       .firstVal a p span.bg {
         left: -5%;
         position: absolute;
-        background: rgb(45, 11, 68);
+        background: rgb(102, 11, 97);
         width: 0;
         height: 100%;
         z-index: 3;

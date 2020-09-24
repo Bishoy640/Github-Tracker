@@ -43,7 +43,7 @@ class App extends Component {
 
   getSearch = (event) => {
     this.setState({ value: event.target.value })
-    event.preventDefault()
+    event.preventDefault();
     event.persist()
 
   }
