@@ -9,13 +9,6 @@
 
 }
 
-body{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: white;
-
-}
-
 .outerDarkPart{
     border-radius: 5px;
     background-color: rgb(163, 78, 184);
