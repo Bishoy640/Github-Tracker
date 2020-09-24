@@ -98,7 +98,7 @@ class App extends Component {
     if (this.state.value === '3') {
       return <div>
         Enter a value
-        <Wallpaper />
+        {/* <Wallpaper /> */}
         <Searchbar change={(event) => this.getSearch(event)} />
       </div>;
     }
@@ -113,7 +113,7 @@ class App extends Component {
         <div className="App" >
 
 
-          <Wallpaper />
+          {/* <Wallpaper /> */}
           <Searchbar submit={(e) => this.submitToSearch(e)} change={(event) => this.getSearch(event)} />
           <div className="backspacepersonss">
 
