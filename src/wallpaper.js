@@ -5,7 +5,7 @@ const wallpaper = () => {
     return (
         <div className="area">
 
-            <ul className="circles">
+            {/* <ul className="circles">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -16,7 +16,7 @@ const wallpaper = () => {
                 <li></li>
                 <li></li>
                 <li></li>
-            </ul>
+            </ul> */}
         </div>
 
 
