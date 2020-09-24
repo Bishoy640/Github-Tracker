@@ -4,7 +4,7 @@ import { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import Nav from './nav'
-import Wallpaper from './wallpaper'
+// import Wallpaper from './wallpaper'
 import Searchbar from './searchbar'
 import Persons from './persons'
 
