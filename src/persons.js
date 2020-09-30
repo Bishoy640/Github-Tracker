@@ -1,6 +1,5 @@
 import React from 'react';
 import './persons.css';
-// import Fetchusers from './fetch'
 
 
 const persons = (props) => {
@@ -8,7 +7,6 @@ const persons = (props) => {
         <div className="persons">
             <div className="outerDarkPart">
                 <div className="inside">
-                    {/* eslint-disable-next-line  */}
                     <img src={props.imageURL} alt="ProfilePic" className="image" key={props.id} ></img>
                     <h4>{props.name}</h4>
 

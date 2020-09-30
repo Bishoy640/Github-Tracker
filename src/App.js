@@ -4,7 +4,7 @@ import { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import Nav from './nav'
-// import Wallpaper from './wallpaper'
+import Wallpaper from './wallpaper'
 import Searchbar from './searchbar'
 import Persons from './persons'
 
@@ -20,27 +20,6 @@ class App extends Component {
     doIt: false,
   };
 
-
-
-  // async componentDidUpdate() {
-  //   if (this.state.doIt === true) {
-  //     const url = "https://api.github.com/search/users?q=" + this.state.searchStr + "&page=1&per_page=10"
-
-  //     const response = await fetch(url);
-  //     const data = await response.json();
-  //     this.setState({
-  //       verify: data.items[0],
-  //       persons: data.items,
-
-  //       loading: false
-  //     }
-  //     );
-  //     console.log(this.state.verify)
-  //   }
-
-  //   this.setState({doIt: false})
-  // }
-
   getSearch = (event) => {
     this.setState({ value: event.target.value })
     event.preventDefault();
@@ -48,19 +27,15 @@ class App extends Component {
 
   }
 
-
-
   submitToSearch = async (e) => {
-    // this.setState({
-    //   outputPersons: true
-    // });
-    e.preventDefault();
-    e.persist()
 
-    const url = "https://api.github.com/search/users?q=" + this.state.value + "&page=1&per_page=18"
+    e.preventDefault();
+
+    const url = "https://api.github.com/search/users?q=" + this.state.value + "&page=1&per_page=24"
 
     const response = await fetch(url);
     const data = await response.json();
+
     this.setState({
       verify: data.items[0],
       persons: data.items,
@@ -88,63 +63,33 @@ class App extends Component {
     //   this.setState({ personsJSX: null })
     // }
 
-    e.persist();
-
+    console.log(this.state.verify)
+    if (this.state.verify === undefined) {
+      console.log("hh")
+      this.setState({ personsJSX: null })
+      alert("The Username is unavailable, please try again.")
+    }
 
   }
 
   render() {
 
-    if (this.state.value === '3') {
-      return <div>
-        Enter a value
-        {/* <Wallpaper /> */}
-        <Searchbar change={(event) => this.getSearch(event)} />
-      </div>;
-    }
+    return <div className="App" >
+      <Wallpaper />
+      <Searchbar submit={(e) => this.submitToSearch(e)} change={(event) => this.getSearch(event)} />
+      <div className="backspacepersonss">
 
-    // if (!this.state.verify) {
-    //   return <div>didn't get a person</div>;
-    // }
+        {this.state.personsJSX}
 
+        {/* <Persons imageURL={this.state.personPic} />
+        <Persons imageURL={this.state.personPic} />
+        <Persons imageURL={this.state.personPic} /> */}
 
-    else {
-      return (
-        <div className="App" >
-
-
-          {/* <Wallpaper /> */}
-          <Searchbar submit={(e) => this.submitToSearch(e)} change={(event) => this.getSearch(event)} />
-          <div className="backspacepersonss">
-
-            {this.state.personsJSX}
-
-            {/* <Persons imageURL={this.state.personPic} />
-            <Persons imageURL={this.state.personPic} />
-            <Persons imageURL={this.state.personPic} /> */}
-
-          </div>
+      </div>
+    </div>
 
 
 
-
-          {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a>
-        </header> */}
-        </div>
-      );
-    }
   }
 }
 
